@@ -39,6 +39,7 @@ export async function fetchWeather(
     latitude: String(lat),
     longitude: String(lon),
     current: 'temperature_2m,precipitation,cloudcover,windspeed_10m,is_day',
+    wind_speed_unit: 'ms',
     timezone: 'auto',
   };
 

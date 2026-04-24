@@ -81,7 +81,7 @@ async function updateWeather(): Promise<void> {
   currentStation.brightness.setBrightnessLevel(currentLux);
 
   console.log(
-    `Aktuell: ${current.temperature}°C, Wind ${current.windSpeed} km/h, ` +
+    `Aktuell: ${current.temperature}°C, Wind ${current.windSpeed} m/s, ` +
     `Regen: ${current.precipitation > 0 ? 'ja' : 'nein'}, Helligkeit: ${currentLux} lux`
   );
 
@@ -98,7 +98,7 @@ async function updateWeather(): Promise<void> {
 
     console.log(
       `Tag +${i + 1}: max ${day.tempMax}°C / min ${day.tempMin}°C, ` +
-      `Wind ${day.windSpeedMax} km/h, Regen: ${day.precipitation > 0 ? 'ja' : 'nein'}`
+      `Wind ${day.windSpeedMax} m/s, Regen: ${day.precipitation > 0 ? 'ja' : 'nein'}`
     );
   }
 }

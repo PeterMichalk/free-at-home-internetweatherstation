@@ -142,6 +142,13 @@ describe('fetchWeather', () => {
     expect(url).not.toContain('daily');
   });
 
+  it('requests wind speed in m/s', async () => {
+    mockFetch({ current: CURRENT_PAYLOAD });
+    await fetchWeather(52.52, 13.405, 0);
+    const url = (global.fetch as ReturnType<typeof vi.fn>).mock.calls[0][0] as string;
+    expect(url).toContain('wind_speed_unit=ms');
+  });
+
   it('returns the correct number of forecast days', async () => {
     mockFetch({ current: CURRENT_PAYLOAD, daily: DAILY_PAYLOAD });
     const result = await fetchWeather(52.52, 13.405, 3);
