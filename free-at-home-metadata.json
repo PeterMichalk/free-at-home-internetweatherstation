@@ -1,0 +1,43 @@
+{
+  "name": "Internet-Wetterstation",
+  "version": "1.1.0",
+  "id": "tech.michalk.freeathome.internetweatherstation",
+  "license": "MIT",
+  "description": "Liest Wetterdaten aus dem Internet (Open-Meteo) und zeigt sie als virtuelle Wetterstation an",
+  "url": "https://www.michalk.tech",
+  "author": "Peter Michalk",
+  "type": "app",
+  "entryPoint": "build/main.js",
+  "parameters": {
+    "default": {
+      "name": "Einstellungen",
+      "items": {
+        "city": {
+          "name": "Stadt (z.B. Berlin)",
+          "type": "string"
+        },
+        "latitude": {
+          "name": "Breitengrad (wenn keine Stadt angegeben)",
+          "type": "number"
+        },
+        "longitude": {
+          "name": "Längengrad (wenn keine Stadt angegeben)",
+          "type": "number"
+        },
+        "updateInterval": {
+          "name": "Aktualisierungsintervall (Minuten)",
+          "type": "number",
+          "default": 5,
+          "min": 1,
+          "max": 60
+        },
+        "forecastDays": {
+          "name": "Vorhersage-Tage (0 = deaktiviert)",
+          "type": "number",
+          "min": 0,
+          "max": 5
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,4 @@
+id,text
+s_name,Internet Weather Station
+s_short_description,Displays live weather data and forecasts as a virtual weather station in free@home
+s_description,This addon automatically retrieves weather data from the free Open-Meteo service and provides it as a virtual weather station in free@home. Temperature, wind speed, rain and brightness are shown for the current moment and optionally for up to 5 forecast days. Location can be configured by city name or GPS coordinates.

@@ -1,0 +1,4 @@
+id,text
+s_name,Internet-Wetterstation
+s_short_description,Zeigt aktuelle Wetterdaten und Vorhersagen als virtuelle Wetterstation in free@home an
+s_description,Dieses Addon ruft automatisch Wetterdaten vom kostenlosen Open-Meteo-Dienst ab und stellt sie als virtuelle Wetterstation in free@home zur Verfügung. Temperatur, Windgeschwindigkeit, Regen und Helligkeit werden für den aktuellen Zeitpunkt sowie optional für bis zu 5 Vorhersage-Tage angezeigt. Der Standort kann per Stadtname oder GPS-Koordinaten konfiguriert werden.
